@@ -192,3 +192,21 @@ h1{letter-spacing:-3px;font-weight:800}
 .advantage-card h3{min-height:2.8em;display:flex;align-items:flex-end}
 .hero-area{margin:10px 0 0;color:var(--subtle);font-size:12px;line-height:1.5}
 @media(max-width:680px){.hero-area{font-size:11px}}
+
+/* Mobile layout fixes */
+@media(max-width:768px){
+  .hero-grid{grid-template-columns:1fr;gap:24px}
+  .hero-visual{margin:0;transform:scale(.85)}
+}
+@media(max-width:680px){.hero-visual{margin:0}}
+@media(max-width:600px){
+  .service-card{display:flex;flex-direction:column;min-height:0;padding:13px}
+  .service-card-top{gap:9px}
+  .service-icon{width:34px;height:34px;font-size:16px}
+  .service-card h3{margin:9px 0 4px;font-size:14px;line-height:1.3}
+  .service-desc{margin:0 0 8px;font-size:11.5px;line-height:1.4}
+  .service-card-bottom{width:100%;padding-top:9px;margin-top:auto;gap:8px}
+  .service-card-bottom .order-button{white-space:nowrap;padding:7px 9px;font-size:10px}
+}
+.about-badge{bottom:10px}
+@media(max-width:390px){.hero-visual{margin:0 -20px}}
