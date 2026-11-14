@@ -218,3 +218,11 @@ h1{letter-spacing:-3px;font-weight:800}
   .hero-buttons{justify-content:center;align-items:center}
   .hero-buttons>.button{width:auto;flex:0 0 auto;white-space:nowrap}
 }
+
+@media(max-width:768px){
+  main>section.section{margin-block:0;padding-block:48px}
+  .site-footer{margin-block:0;padding-block:48px}
+  .section-heading{margin-bottom:24px}
+  .about-copy h2,.contact-copy h2{margin-bottom:24px}
+  .service-grid,.advantage-grid,.about-stats{gap:16px}
+}
