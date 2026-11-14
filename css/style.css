@@ -210,3 +210,11 @@ h1{letter-spacing:-3px;font-weight:800}
 }
 .about-badge{bottom:10px}
 @media(max-width:390px){.hero-visual{margin:0 -20px}}
+
+/* Keep button labels and icons grouped and centered on narrow screens */
+@media(max-width:480px){
+  .button{display:inline-flex;justify-content:center;align-items:center;text-align:center;gap:8px}
+  .button>i{flex:0 0 auto;margin:0}
+  .hero-buttons{justify-content:center;align-items:center}
+  .hero-buttons>.button{width:auto;flex:0 0 auto;white-space:nowrap}
+}
