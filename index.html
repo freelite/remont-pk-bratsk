@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Дмитрий — частный мастер по ремонту ПК и ноутбуков в Братске. Выезжаю в Центральный, Падунский и Правобережный районы. Честные цены и гарантия.">
+  <title>Дмитрий • Ремонт ПК в Братске | Частный мастер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static@latest/font/lucide.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/theme.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Дмитрий — ремонт ПК"><span class="brand-mark"><i class="icon icon-cpu" aria-hidden="true"></i></span><span>Дмитрий <span class="brand-accent">• Ремонт ПК</span></span></a>
+      <nav class="main-nav" aria-label="Главная навигация"><a href="#prices">Услуги и цены</a><a href="#advantages">Преимущества</a><a href="#about">Обо мне</a><a href="#contacts">Контакты</a></nav>
+      <div class="header-actions"><button class="theme-toggle" type="button" aria-label="Переключить тему" title="Переключить тему"><i class="icon icon-sun" aria-hidden="true"></i></button><a class="button button-small" href="#contact-form">Вызвать мастера <i class="icon icon-arrow-up-right" aria-hidden="true"></i></a><button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><i class="icon icon-menu" aria-hidden="true"></i></button></div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal"><div class="eyebrow"><span class="status-dot"></span> Частный мастер в Братске</div>
+          <h1>Техника снова<br><span class="gradient-text">работает.</span></h1>
+          <p class="hero-lead">Честно чиню компьютеры и ноутбуки - называю цену заранее и бережно отношусь к вашим данным.</p><p class="hero-area">Выезд по Братску: Центральный, Падунский и Правобережный районы</p>
+          <div class="hero-buttons"><a class="button" href="#prices">Смотреть прайс <i class="icon icon-arrow-down" aria-hidden="true"></i></a><a class="button button-ghost" href="#contact-form"><i class="icon icon-phone" aria-hidden="true"></i> Оставить заявку</a></div>
+          <div class="hero-facts"><div><strong>от 40 мин</strong><span>выезд мастера</span></div><div><strong>до 1 года</strong><span>гарантия на работы</span></div><div><strong>20+</strong><span>услуг в прайсе</span></div></div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Сервисная диагностика компьютера"><div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div><div class="device-card glass"><div class="device-top"><span class="device-label"><i class="icon icon-activity" aria-hidden="true"></i> Система в порядке</span><span class="device-dots"><b></b><b></b><b></b></span></div><div class="device-icon"><i class="icon icon-cpu" aria-hidden="true"></i></div><div class="device-lines"><span></span><span></span><span></span></div><div class="device-bottom"><span>Точная диагностика</span><i class="icon icon-check-circle-2" aria-hidden="true"></i></div></div><div class="floating-chip chip-left glass"><i class="icon icon-shield-check" aria-hidden="true"></i><span>Гарантия<br><b>до 12 месяцев</b></span></div><div class="floating-chip chip-right glass"><i class="icon icon-zap" aria-hidden="true"></i><span>Быстрый<br><b>выезд</b></span></div></div>
+      </div>
+    </section>
+    <section class="section prices-section" id="prices"><div class="container">
+      <div class="section-heading reveal"><div><div class="eyebrow">Прозрачно и по делу</div><h2>Услуги и <span class="gradient-text">цены</span></h2></div><p>Стоимость согласую заранее. Никаких неожиданных работ в счёте.</p></div>
+      <div class="price-tools reveal"><div class="category-tabs" role="tablist" aria-label="Категории услуг" id="category-tabs"></div><label class="search-box"><i class="icon icon-search" aria-hidden="true"></i><input type="search" id="price-search" placeholder="Найти услугу..." autocomplete="off" aria-label="Поиск услуг"><kbd>⌘ K</kbd></label></div>
+      <div class="results-meta"><span id="results-count" aria-live="polite"></span><span class="meta-note"><i class="icon icon-info" aria-hidden="true"></i> Цены указаны за работу</span></div>
+      <div class="service-grid" id="service-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>Услуги не найдены. Попробуйте изменить запрос или категорию.</p>
+      <div class="price-note reveal"><i class="icon icon-circle-help" aria-hidden="true"></i><p><strong>Обратите внимание</strong><br>Деньги за диагностику не взымаются при последующем ремонте.<br><strong>Комплектующие</strong>: указана только стоимость работы, без запчастей.</p></div>
+    </div></section>
+    <section class="section advantages-section" id="advantages"><div class="container"><div class="section-heading reveal"><div><div class="eyebrow">Почему мне доверяют</div><h2>Сервис без <span class="gradient-text">сюрпризов</span></h2></div><p>Решаю проблему, а не навязываю лишнее.</p></div><div class="advantage-grid">
+      <article class="advantage-card glass reveal"><span class="advantage-icon blue"><i class="icon icon-badge-check" aria-hidden="true"></i></span><h3>Моя гарантия</h3><p>Отвечаю за результат и предоставляю гарантию до 1 года.</p><span class="card-index">01</span></article>
+      <article class="advantage-card glass reveal"><span class="advantage-icon purple"><i class="icon icon-receipt-text" aria-hidden="true"></i></span><h3>Понятная стоимость</h3><p>Согласую цену до начала ремонта - стоимость не станет сюрпризом.</p><span class="card-index">02</span></article>
+      <article class="advantage-card glass reveal"><span class="advantage-icon cyan"><i class="icon icon-house" aria-hidden="true"></i></span><h3>Выезд к вам</h3><p>Приеду на дом или в офис в пределах Братска.</p><span class="card-index">03</span></article>
+      <article class="advantage-card glass reveal"><span class="advantage-icon green"><i class="icon icon-heart-handshake" aria-hidden="true"></i></span><h3>Бережный подход</h3><p>Бережно отношусь к вашей технике и личным данным.</p><span class="card-index">04</span></article>
+    </div></div></section>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="about-portrait-wrap reveal">
+          <div class="about-portrait glass">
+            <img class="about-photo" src="master.jpg" alt="Мастер по ремонту компьютеров за рабочим местом" loading="lazy">
+          </div>
+          <div class="portrait-caption glass"><span class="status-dot"></span> Работаю лично с каждым клиентом</div>
+          <div class="about-badge glass"><i class="icon icon-award" aria-hidden="true"></i><span>Дмитрий · частный мастер <b>Опыт 10+ лет</b></span></div>
+        </div>
+        <div class="about-copy reveal">
+          <div class="eyebrow">Обо мне</div>
+          <h2 id="about-title">Давайте знакомиться — я ваш <span class="gradient-text">персональный мастер</span></h2>
+          <p class="about-name">Привет! Меня зовут <strong>Дмитрий</strong></p>
+          <p class="about-description">Я частный компьютерный мастер в Братске. Работаю напрямую, без посредников и накруток, выезжаю в Центральный, Падунский и Правобережный районы. Ценю свою репутацию: заранее называю точную стоимость работ и бережно отношусь к вашей технике и личным данным.</p>
+          <div class="about-stats" aria-label="Факты о мастере">
+            <div class="about-stat glass advantage-card"><i class="icon icon-monitor-check" aria-hidden="true"></i><strong>1500+</strong><span>отремонтированных ПК</span></div>
+            <div class="about-stat glass advantage-card"><i class="icon icon-shield-check" aria-hidden="true"></i><strong>до 1 года</strong><span>гарантия</span></div>
+            <div class="about-stat glass advantage-card"><i class="icon icon-scan-search" aria-hidden="true"></i><strong>0 ₽</strong><span>за диагностику*</span></div>
+            <small class="about-footnote">* При последующем ремонте</small>
+          </div>
+          <a class="button about-button" href="#" data-open-about-modal>Задать вопрос мастеру <i class="icon icon-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+    <section class="section contact-section" id="contacts"><div class="container contact-layout"><div class="contact-copy reveal"><div class="eyebrow">Есть вопрос или нужна помощь?</div><h2>Давайте вернём<br><span class="gradient-text">технику к жизни.</span></h2><p>Оставьте заявку — я свяжусь с вами и уточню детали.</p><div class="contact-details"><a href="#contact-form"><i class="icon icon-phone" aria-hidden="true"></i><span><small>Связаться со мной</small><b>Оставьте заявку на звонок</b></span></a><div><i class="icon icon-clock-3" aria-hidden="true"></i><span><small>График работы</small><b>Пн–Пт: с 09:00 до 20:00</b><b>Сб–Вс: по предварительной договоренности</b></span></div><div><i class="icon icon-map-pin" aria-hidden="true"></i><span><small>Выезжаю в Братске</small><b>Центральный · Падунский · Правобережный</b></span></div></div></div>
+      <form class="contact-form glass reveal" id="contact-form" novalidate><h3>Оставить заявку</h3><p>Заполните форму, и я перезвоню</p><label>Ваше имя<input name="name" type="text" placeholder="Например, Дмитрий"}}]} autocomplete="name" required minlength="2"></label><label>Телефон<input name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required></label><label>Какая услуга нужна?<select name="service"><option value="">Выберите услугу (необязательно)</option></select></label><label>Комментарий<textarea name="comment" rows="3" placeholder="Коротко опишите проблему"></textarea></label><button class="button button-full" type="submit">Отправить заявку <i class="icon icon-arrow-right" aria-hidden="true"></i></button><small class="form-privacy">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</small></form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#top" aria-label="Дмитрий — ремонт ПК"><span class="brand-mark"><i class="icon icon-cpu" aria-hidden="true"></i></span><span>Дмитрий <span class="brand-accent">• Ремонт ПК</span></span></a><p>Частный мастер по ремонту ПК в Братске · Центральный, Падунский, Правобережный районы</p><span>Пн–Пт: с 09:00 до 20:00 · Сб–Вс: по договорённости<br>© <span id="current-year"></span> Дмитрий • Ремонт ПК</span></div></footer>
+  <div class="modal" id="order-modal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><section class="modal-dialog glass" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Закрыть" data-close-modal><i class="icon icon-x" aria-hidden="true"></i></button><div class="modal-icon"><i class="icon icon-wrench" aria-hidden="true"></i></div><h2 id="modal-title">Заказать услугу</h2><p>Оставьте контакты — я скоро вам позвоню.</p><form class="contact-form modal-form" id="modal-form" novalidate><label>Ваше имя<input name="name" type="text" placeholder="Ваше имя" autocomplete="name" required minlength="2"></label><label>Телефон<input name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required></label><label>Услуга<input name="service" type="text" readonly></label><label>Комментарий<textarea name="comment" rows="2" placeholder="Комментарий (необязательно)"></textarea></label><button class="button button-full" type="submit">Жду звонка <i class="icon icon-arrow-right" aria-hidden="true"></i></button></form></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"><i class="icon icon-circle-check" aria-hidden="true"></i><span>Спасибо! Заявка принята, скоро я вам позвоню.</span></div>
+</body>
+</html>
