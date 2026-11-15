@@ -154,7 +154,11 @@ const WORKER_URL = 'https://tg-form-bratsk.prof3662.workers.dev/';
           `👤 Имя: ${escapeHtml(fields.name.value.trim())}`,
           `📞 Телефон: <code>${escapeHtml(fields.phone.value.trim())}</code>`
         ];
-        if (fields.service?.value.trim()) lines.push(`🔧 Услуга: ${escapeHtml(fields.service.value.trim())}`);
+        const serviceField = fields.service;
+        const serviceLabel = serviceField?.tagName === 'SELECT'
+          ? (serviceField.value ? (serviceField.selectedOptions[0]?.textContent || '').trim() : '')
+          : (serviceField?.value || '').trim();
+        if (serviceLabel) lines.push(`🔧 Услуга: ${escapeHtml(serviceLabel)}`);
         if (fields.comment?.value.trim()) lines.push(`💬 Комментарий: ${escapeHtml(fields.comment.value.trim())}`);
         lines.push(`📍 Источник: ${form === modalForm ? 'Модальное окно' : 'Форма внизу страницы'}`);
         const messageText = lines.join('\n');
