@@ -5,8 +5,8 @@
   if (saved === 'light' || saved === 'dark') root.dataset.theme = saved;
   const updateButton = () => {
     const light = root.dataset.theme === 'light';
-    const icon = toggle?.querySelector('i');
-    if (icon) icon.className = `icon icon-${light ? 'moon' : 'sun'}`;
+    const icon = toggle?.querySelector('use');
+    if (icon) icon.setAttribute('href', `#icon-${light ? 'moon' : 'sun'}`);
     toggle?.setAttribute('aria-label', light ? 'Включить тёмную тему' : 'Включить светлую тему');
     toggle?.setAttribute('title', light ? 'Включить тёмную тему' : 'Включить светлую тему');
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#f4f7fc' : '#0f172a');

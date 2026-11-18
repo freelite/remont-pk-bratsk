@@ -228,3 +228,30 @@ h1{letter-spacing:-3px;font-weight:800}
   .about-copy h2,.contact-copy h2{margin-bottom:24px}
   .service-grid,.advantage-grid,.about-stats{gap:16px}
 }
+
+/* ===== Inline SVG sprite icons (replaces the Lucide icon font) ===== */
+svg.icon{width:1em;height:1em;display:inline-block;vertical-align:-.125em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;overflow:visible}
+.brand-mark .icon{font-size:18px}
+.theme-toggle .icon,.menu-toggle .icon{font-size:18px}
+.button .icon{font-size:16px;transition:transform var(--btn-dur) var(--ease-smooth)}
+.device-label .icon{color:var(--green);margin-right:5px}
+.device-icon .icon{font-size:61px}
+.device-bottom .icon{color:var(--green);font-size:16px}
+.floating-chip .icon{font-size:19px;color:#8ca9ff}
+.chip-right .icon{color:#d4a0ff}
+.search-box>.icon{font-size:16px}
+.price-note>.icon{margin-top:2px;color:var(--accent);font-size:18px}
+.order-button .icon{font-size:14px;transition:transform .4s cubic-bezier(.22,1,.36,1)}
+.about-badge>.icon{font-size:21px}
+.about-stat .icon{font-size:17px;color:var(--accent);margin-bottom:2px}
+.contact-details>div>.icon,.contact-details>a>.icon{width:39px;height:39px;padding:11px;box-sizing:border-box;border-radius:11px;background:var(--accent-soft);color:var(--accent)}
+.toast .icon{font-size:19px;color:var(--green);flex:none}
+.theme-toggle .icon,.modal-close .icon{transition:transform .6s var(--ease-smooth)}
+.button:hover .icon{transform:translate3d(3px,0,0)}
+.button:hover .icon-arrow-down{transform:translate3d(0,3px,0)}
+.button:hover .icon-arrow-up-right{transform:translate3d(2px,-2px,0)}
+.button:hover .icon-phone{transform:none}
+.modal-close:hover .icon{transform:rotate(90deg)}
+.order-button:hover .icon,.service-card:hover .order-button .icon{transform:none}
+@media(max-width:390px){.about-stat .icon{grid-row:span 2;margin:0}}
+@media(max-width:480px){.button>.icon{flex:0 0 auto;margin:0}}
